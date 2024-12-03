@@ -1,0 +1,88 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffebf2;
+    text-align: center;
+    color: #333;
+}
+
+header {
+    background-color: #ff66b2;
+    padding: 20px;
+    color: white;
+}
+
+header h1 {
+    font-size: 3em;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#birthday-message {
+    font-size: 1.5em;
+    margin-top: 20px;
+    animation: fadeIn 3s ease-in-out;
+}
+
+#balloons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.balloon {
+    width: 100px;
+    height: 150px;
+    background-color: #ff66b2;
+    border-radius: 50%;
+    animation: floatBalloons 5s ease-in-out infinite;
+}
+
+#balloon1 {
+    background-color: #ff6699;
+    animation-delay: 0s;
+}
+
+#balloon2 {
+    background-color: #ff99cc;
+    animation-delay: 1s;
+}
+
+#balloon3 {
+    background-color: #ffccff;
+    animation-delay: 2s;
+}
+
+footer {
+    margin-top: 50px;
+    background-color: #ff66b2;
+    padding: 10px;
+    color: white;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes floatBalloons {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
